@@ -10,7 +10,7 @@ const router = require("./model2/routes");
 
 app.use(cors({
   origin: [
- "https://charming-lollipop-1f8934.netlify.app", // Your new Netlify domain from the error log
+ "https://bespoke-lolly-7a4376.netlify.app", // Your new Netlify domain from the error log
         "http://localhost:5173",            // For local testing
     "http://localhost:5000" 
   ],
