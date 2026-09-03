@@ -10,8 +10,8 @@ const router = require("./model2/routes");
 
 app.use(cors({
   origin: [
-    "https://soft-faun-bc627d.netlify.app", // Replace with your actual Vercel domain
-    "http://localhost:5173",                 // For local testing
+ "https://charming-lollipop-1f8934.netlify.app", // Your new Netlify domain from the error log
+        "http://localhost:5173",            // For local testing
     "http://localhost:5000" 
   ],
   credentials: true
