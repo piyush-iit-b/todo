@@ -5,7 +5,7 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 
 const app = express();
-const router = require("../backend/model2/routes");
+const router = require("./model2/routes");
 
 
 app.use(cors({
