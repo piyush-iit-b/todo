@@ -1,12 +1,20 @@
 require("dotenv").config(); // Must be at the very top
 const express = require("express");
 const cors = require("cors");
+
 const mongoose = require("mongoose");
 
 const app = express();
 const router = require("../backend/model2/routes");
 
-app.use(cors());
+
+app.use(cors({
+  origin: [
+    "https://https://tranquil-banoffee-8445cf.netlify.app", // Replace with your actual Vercel domain
+    "http://localhost:5173"                 // For local testing
+  ],
+  credentials: true
+}));
 app.use(express.json());
 app.use("/user", router);
  
