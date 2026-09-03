@@ -10,7 +10,7 @@ const router = require("./model2/routes");
 
 app.use(cors({
   origin: [
-    "https://tranquil-banoffee-8445cf.netlify.app", // Replace with your actual Vercel domain
+    "https://https://soft-faun-bc627d.netlify.app", // Replace with your actual Vercel domain
     "http://localhost:5173",                 // For local testing
     "http://localhost:5000" 
   ],
