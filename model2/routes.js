@@ -1,0 +1,11 @@
+const express = require("express");
+const { signIn, signUp, getUser,getTask,addTask,deleteTask,updateTask } = require("./controller");
+const router = express.Router();
+router.post("/signin", signIn);
+router.post("/signup", signUp);
+router.get("/getuser", getUser);
+router.get("/gettask/:username", getTask);
+router.post("/addtask", addTask);
+router.put("/updatetask/:id", updateTask);
+router.put("/deletetask/:id", deleteTask);
+module.exports = router;
